@@ -44,6 +44,14 @@
     "loader_version": null,
     "mods": null,
     "desc": ""
+  },
+  "PVP5": {
+    "name": "prueba8",
+    "version": "1.16.5",
+    "loader": "vanilla",
+    "loader_version": null,
+    "mods": null,
+    "desc": ""
   }
 }
 
