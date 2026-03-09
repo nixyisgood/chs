@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const btnPrueba = document.getElementById('btn-prueba-humor');
     if (btnPrueba) {
         btnPrueba.onclick = () => {
-            alert("¡Felicidades! Si puedes leer esto es porque la actualización 1.2.0 se ha instalado correctamente. :)");
+            alert("¡Felicidades! Si puedes leer esto es porque la actualización 1.3.0 se ha instalado correctamente. :)");
         };
     }
 
