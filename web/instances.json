@@ -52,6 +52,14 @@
     "loader_version": null,
     "mods": null,
     "desc": ""
+  },
+  "LOL1": {
+    "name": "prueba9",
+    "version": "1.6.4",
+    "loader": "vanilla",
+    "loader_version": null,
+    "mods": null,
+    "desc": ""
   }
 }
 
