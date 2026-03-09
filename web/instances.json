@@ -1,0 +1,24 @@
+{
+  "SURVIVAL": {
+    "name": "Survival 1.20 [SURVIVAL]",
+    "version": "1.20.1",
+    "loader": "vanilla",
+    "desc": "Servidor principal de supervivencia."
+  },
+  "PERMA": {
+    "name": "preuba5",
+    "version": "1.21.11",
+    "loader": "fabric",
+    "loader_version": null,
+    "mods": "https://www.dropbox.com/scl/fo/ezngeddjb2t2hzj4xvudz/APgCx-ArL4HSQpXvEVUWwwg?rlkey=hjvc11x5avywuqy0qw5ypm9uw&dl=0",
+    "desc": "prueba5"
+  },
+  "PVP": {
+    "name": "probar",
+    "version": "1.8.9",
+    "loader": "vanilla",
+    "loader_version": null,
+    "mods": null,
+    "desc": ""
+  }
+}
