@@ -3,10 +3,146 @@ body {
     background: radial-gradient(circle, #1a1a1a, #0c0c0c);
     color: #fff;
     margin: 0;
-    display: block; /* Cambiado de flex para permitir scroll */
+    display: flex; /* Cambiado de block a flex */
+    flex-direction: column; /* Para que el header y main se apilen */
     min-height: 100vh;
 }
 
+.main-header {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff4d4d;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.2);
+}
+
+.header-logo {
+    width: 50px;
+    filter: drop-shadow(0 0 10px rgba(255, 77, 77, 0.5));
+}
+
+.admin-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+.version-manager, .instance-manager, .instance-list-container {
+    background: rgba(25, 25, 25, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 77, 77, 0.1);
+}
+
+.instance-list-container {
+    grid-column: span 2;
+}
+
+.instance-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.instance {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.instance:hover {
+    border-color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.02);
+}
+
+.instance .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.send-btn {
+    grid-column: span 2;
+    background: #00ff88;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #00cc6e;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+.edit-btn {
+    background: #444;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+}
+
+.btn-export {
+    margin-top: 20px;
+    background: #4d94ff;
+}
+
+.btn-export:hover {
+    background: #3377ff;
+}
+
+.btn-secondary {
+    background: #444;
+}
+
+.btn-secondary:hover {
+    background: #555;
+}
+
+h2 {
+    color: #ff4d4d;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#logout-btn {
+    width: auto;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+#logout-btn:hover {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.json-export {
+    margin-top: 10px;
+}
+
+/* Reutilizamos los estilos previos para inputs y forms */
 .login-container {
     backdrop-filter: blur(10px);
     padding: 40px;
