@@ -14,11 +14,20 @@
     "desc": "prueba5"
   },
   "PVP": {
-    "name": "probar",
+    "name": "hola que hace",
     "version": "1.8.9",
+    "loader": "vanilla",
+    "loader_version": null,
+    "mods": null,
+    "desc": ""
+  },
+  "PVP2": {
+    "name": "probar2",
+    "version": "1.9",
     "loader": "vanilla",
     "loader_version": null,
     "mods": null,
     "desc": ""
   }
 }
+
