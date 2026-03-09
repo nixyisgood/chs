@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaos Studio - Ajustes</title>
+    <link rel="stylesheet" href="../css/panel/settings.css">
+</head>
+<body>
+    <div id="main-wrapper">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-circle">
+                    <img id="player-avatar" src="" alt="Skin">
+                </div>
+                <h3 id="player-name">NOMBRE DEL USUARIO</h3>
+            </div>
+
+            <nav class="menu">
+                <button id="btn-home">
+                    <img src="../../assets/svg/home-icon-svgrepo-com.svg" class="btn-icon"> Home
+                </button>
+                <button id="btn-info">
+                    <img src="../../assets/svg/info-circle-svgrepo-com.svg" class="btn-icon"> Info
+                </button>
+                <button id="btn-logout">
+                    <img src="../../assets/svg/logout-log-out-svgrepo-com.svg" class="btn-icon"> Cerrar Sesión
+                </button>
+            </nav>
+
+            <div class="bottom-logo">
+                <img src="../../assets/icono/ft2.png" alt="Logo">
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <div class="settings-container">
+                <h1 id="panel-title" class="settings-title">AJUSTES DE JUEGO</h1>
+                
+                <!-- Contenido de Ajustes -->
+                <div id="settings-content" class="settings-grid">
+                    <!-- Versión del Cliente -->
+                    <div class="setting-card">
+                        <div class="setting-info">
+                            <span class="setting-name">Versión del Cliente</span>
+                            <span class="setting-desc">Versión actual instalada de Chaos Studio</span>
+                        </div>
+                        <div class="version-badge" id="client-version">1.0.0</div>
+                    </div>
+
+                    <!-- Memoria RAM -->
+                    <div class="setting-card">
+                        <div class="setting-info">
+                            <span class="setting-name">Memoria RAM</span>
+                            <span class="setting-desc">Cantidad de RAM asignada a Minecraft</span>
+                        </div>
+                        <div class="ram-selector">
+                            <input type="range" id="ram-slider" min="1" max="16" step="1" value="4">
+                            <div class="ram-value"><span id="ram-count">4</span> GB</div>
+                        </div>
+                    </div>
+
+                    <!-- Resolución -->
+                    <div class="setting-card">
+                        <div class="setting-info">
+                            <span class="setting-name">Resolución</span>
+                            <span class="setting-desc">Tamaño de la ventana del juego</span>
+                        </div>
+                        <select id="res-select" class="custom-select">
+                            <option value="854x480">854 x 480 (480p)</option>
+                            <option value="1280x720" selected>1280 x 720 (HD)</option>
+                            <option value="1920x1080">1920 x 1080 (Full HD)</option>
+                            <option value="fullscreen">Pantalla Completa</option>
+                        </select>
+                    </div>
+
+                    <!-- Abrir Carpeta -->
+                    <div class="setting-card">
+                        <div class="setting-info">
+                            <span class="setting-name">Archivos del Launcher</span>
+                            <span class="setting-desc">Abrir la carpeta donde se instalan las versiones y mods</span>
+                        </div>
+                        <button id="btn-open-folder" class="btn-action">ABRIR CARPETA</button>
+                    </div>
+                </div>
+
+                <!-- Contenido de Info (Oculto por defecto) -->
+                <div id="info-content" class="settings-grid" style="display: none;">
+                    <div class="setting-card full-width info-card">
+                        <div class="setting-info">
+                            <span class="setting-name">Acerca de Chaos Studio</span>
+                            <p class="info-text">¡Hola! Somos Chaos studio, un Studio en donde el aburrimiento no existe! Tenemos Variantes de Setups como El Hoyo, Janeiro Games, AG Games 2 entre muchisimas cosas, tambien tenemos eventos originales como Caos Dice y otros mas que se estan desarrolando, ¿Que esperas? Unete! Te esperamos :)</p>
+                            
+                            <div class="dev-divider"></div>
+                            
+                            <span class="setting-name">Desarrollador (Dev)</span>
+                            <p class="info-text">Hola soy Rummy programador oficial de Chaos Studio si te interesa mi trabajo puedes contactarme por discord como <strong>"rummygod"</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-footer">
+                    <button id="btn-save-settings" class="btn-save">GUARDAR CAMBIOS</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/panel/settings.js"></script>
+</body>
+</html>

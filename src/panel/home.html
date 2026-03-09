@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaos Studio</title>
+    <link rel="stylesheet" href="../css/panel/home.css">
+</head>
+<body>
+    <div id="main-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-icons-container">
+                <button id="btn-home" class="sidebar-btn active">
+                    <img src="../../assets/svg/home-icon-svgrepo-com.svg" alt="Home">
+                </button>
+                <button id="btn-settings" class="sidebar-btn">
+                    <img src="../../assets/svg/settings-gear-svgrepo-com.svg" alt="Settings">
+                </button>
+            </div>
+            
+            <div class="sidebar-bottom">
+                <button id="btn-logout" class="sidebar-btn profile-btn">
+                    <img id="player-avatar" src="" alt="">
+                </button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="main-branding">
+                <h1 class="brand-text">CHAOS STUDIO</h1>
+            </div>
+
+            <footer class="home-footer">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-label">ÚLTIMA SESIÓN</span>
+                        <span class="stat-value" id="last-session-date">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">TIEMPO JUGADO</span>
+                        <span class="stat-value" id="total-play-time">-</span>
+                    </div>
+                </div>
+                
+                <div class="play-section">
+                    <input list="instance-list-datalist" id="instance-code" placeholder="Código de instancia (ej: SURVIVAL)" spellcheck="false" class="instance-input">
+                    <datalist id="instance-list-datalist">
+                        <!-- Las opciones se cargarán dinámicamente -->
+                    </datalist>
+                    <button id="btn-play-main" class="btn-play-pill">Play</button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script type="module" src="../js/utils/skin/table.js"></script>
+    <script type="module" src="../js/utils/skin/skin2D.js"></script>
+    <script type="module" src="../js/utils/skin/skin.js"></script>
+
+    <script src="../js/panel/home.js"></script>
+</body>
+</html>

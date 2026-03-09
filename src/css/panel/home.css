@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #2a2a2a 0%, #000000 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#main-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 85px;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar-icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+.sidebar-btn {
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%; /* Iconos circulares como en la foto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sidebar-btn img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+/* PROFILE AVATAR SPECIFIC */
+.profile-btn {
+    width: 60px; /* Un poco más grande que los otros */
+    height: 60px;
+    padding: 0;
+    overflow: hidden;
+    background: #111;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.profile-btn #player-avatar {
+    width: 100%;
+    height: 100%;
+    filter: none !important; /* Forzamos quitar el filtro blanco */
+    opacity: 1 !important;
+    image-rendering: pixelated;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-btn:hover {
+    border-color: rgba(255, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    transform: scale(1.1) translateY(-5px);
+}
+
+.sidebar-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-btn:hover img {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px white);
+}
+
+.sidebar-btn.active {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+}
+
+.sidebar-btn.active img {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.5)) brightness(0) invert(1);
+}
+
+/* CONTENT AREA */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                url('../../../assets/icono/ft2.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Efecto de niebla/mist al fondo */
+.content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.main-branding {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: -40px; /* Ajustado al quitar la imagen */
+}
+
+.brand-text {
+    font-size: 110px; /* Ligeramente más grande al no tener logo central */
+    font-weight: 900;
+    color: white;
+    letter-spacing: 15px;
+    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.9),
+                 0 0 30px rgba(255, 255, 255, 0.1);
+    margin: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #ffffff 40%, #cccccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 3;
+}
+
+/* FOOTER STATS & PLAY */
+.home-footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center; /* Centrar todo el footer */
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.stats-container {
+    display: flex;
+    gap: 80px;
+    opacity: 0.8;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar textos */
+    gap: 5px;
+}
+
+.stat-label {
+    font-size: 10px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.stat-value {
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.play-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.instance-input {
+    width: 350px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    padding: 0 20px;
+}
+
+.instance-input:focus {
+    border-color: rgba(255, 0, 0, 0.4);
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+}
+
+.btn-play-pill {
+    width: 350px;
+    height: 55px;
+    background: rgba(255, 0, 0, 0.05);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 40px; /* Estilo pill como en la foto */
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(15px);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.1);
+}
+
+.btn-play-pill:hover {
+    background: rgba(255, 0, 0, 0.15);
+    border-color: rgba(255, 0, 0, 0.5);
+    transform: translateY(-2px);
+    letter-spacing: 6px;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+    color: #fff;
+}

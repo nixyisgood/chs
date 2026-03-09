@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaos Studio - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="../../assets/icono/ft2.png" alt="Logo" class="header-logo">
+        <h1>PANEL DE INSTANCIAS</h1>
+        <button id="logout-btn">CERRAR SESIÓN</button>
+    </header>
+
+    <main class="admin-container">
+        <!-- Control de Versión del Launcher -->
+        <div class="version-manager">
+            <h2>Versión del Launcher</h2>
+            <div class="form-group">
+                <label for="current-ver-display">Versión Actual en Web:</label>
+                <input type="text" id="launcher-version" placeholder="Ej: 1.1.0">
+            </div>
+            <div class="form-group">
+                <label for="update-url">URL de Descarga:</label>
+                <input type="text" id="launcher-url" placeholder="https://miweb.com/Chaos-v1.1.0.exe">
+            </div>
+            <div class="form-group">
+                <label for="update-notes">Notas de la Versión:</label>
+                <textarea id="launcher-notes" placeholder="¿Qué hay de nuevo?"></textarea>
+            </div>
+            <button id="save-version" class="btn-secondary">ACTUALIZAR VERSIÓN WEB</button>
+            <div class="json-export">
+                <button id="export-update-json" class="btn-export">COPIAR UPDATE.JSON</button>
+            </div>
+        </div>
+
+        <div class="instance-manager">
+            <h2 id="form-title">Crear Nueva Instancia</h2>
+            <form id="add-instance-form" class="instance-form">
+                <input type="hidden" id="edit-index" value="-1">
+                <div class="form-group">
+                    <label for="instance-name">Nombre de la Instancia:</label>
+                    <input type="text" id="instance-name" placeholder="Ej: Mi Servidor Survival" required>
+                </div>
+                <div class="form-group">
+                    <label for="instance-code">Código Único (ID):</label>
+                    <input type="text" id="instance-code" placeholder="Ej: SURVIVAL" required>
+                </div>
+                <div class="form-group">
+                    <label for="instance-version">Versión de Minecraft:</label>
+                    <input type="text" id="instance-version" placeholder="Ej: 1.20.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="instance-loader">Mod Loader:</label>
+                    <select id="instance-loader" class="admin-select">
+                        <option value="vanilla">Vanilla (Sin Mods)</option>
+                        <option value="forge">Forge</option>
+                        <option value="fabric">Fabric</option>
+                    </select>
+                </div>
+                <div id="loader-version-container" class="form-group">
+                    <label for="instance-loader-version">Versión del Loader (Opcional):</label>
+                    <input type="text" id="instance-loader-version" placeholder="Ej: 47.2.0 (Forge) o 0.15.11 (Fabric)">
+                </div>
+                <div class="form-group">
+                    <label for="instance-mods">URL de Mods (.zip):</label>
+                    <input type="text" id="instance-mods" placeholder="https://ejemplo.com/mods.zip">
+                    <small>Sube tus mods a un servicio de hosting y pega el enlace directo aquí.</small>
+                </div>
+                <div class="form-group">
+                    <label for="instance-desc">Descripción:</label>
+                    <textarea id="instance-desc" placeholder="Breve descripción del servidor..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">AÑADIR INSTANCIA</button>
+            </form>
+            <div class="json-export">
+                <button id="export-json" class="btn-export">COPIAR JSON PARA LA WEB</button>
+            </div>
+        </div>
+
+        <div class="instance-list-container">
+            <h2>Instancias Actuales</h2>
+            <div id="instance-list" class="instance-list">
+                <!-- Las instancias se cargarán aquí -->
+            </div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

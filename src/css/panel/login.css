@@ -1,0 +1,233 @@
+/* =========================================
+   1. ESTRUCTURA Y FONDO (BODY)
+   ========================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0%, #000 100%),
+                url('../../../assets/icono/ft2.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+#main-wrapper {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.login-card {
+    width: 450px;
+    padding: 60px 40px;
+    background: rgba(30, 34, 41, 0.7);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(255, 0, 0, 0.1);
+    box-sizing: border-box; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.login-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+    background: linear-gradient(to bottom, #ffffff, #ff4d4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-subtitle {
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.offline-input {
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.offline-input:focus {
+    border-color: #ff4d4d;
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.logo-box {
+    width: 130px;
+    height: 130px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6),
+                0 0 20px rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.launcher-logo {
+    width: 85%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.3));
+}
+
+.btn-login, .btn-microsoft {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    color: white;
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-login:hover, .btn-microsoft:hover {
+    background: rgba(255, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+    border-color: #ff4d4d;
+}
+
+.custom-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.divider-dot {
+    width: 6px;
+    height: 6px;
+    background: #ff0000;
+    border-radius: 50%;
+}
+
+.launcher-footer-name {
+    margin-top: 40px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+/* =========================================
+   5. SEPARADOR (DIVIDER)
+   ========================================= */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 40px 0; /* Más espacio entre Online y Offline */
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.divider span {
+    padding: 0 15px;
+    color: #555;
+    font-size: 12px;
+}
+
+/* =========================================
+   6. SECCIÓN MODO OFFLINE
+   ========================================= */
+.offline-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separa el input del botón */
+}
+
+#offline-user {
+    width: 100%;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 5px; /* Espacio extra antes del botón */
+}
+
+#btn-play {
+    width: 100%;
+    padding: 15px;
+    background: #333333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btn-play:hover {
+    background: #444;
+}
+
+/* =========================================
+   7. FOOTER (TEXTO LEGAL)
+   ========================================= */
+.footer-text {
+    margin-top: 50px; /* Empuja el texto hacia abajo para que no estorbe */
+    font-size: 11px;
+    color: #444;
+}
