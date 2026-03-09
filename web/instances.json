@@ -36,6 +36,14 @@
     "loader_version": null,
     "mods": null,
     "desc": ""
+  },
+  "PVP4": {
+    "name": "prueba7",
+    "version": "1.12.2",
+    "loader": "vanilla",
+    "loader_version": null,
+    "mods": null,
+    "desc": ""
   }
 }
 
