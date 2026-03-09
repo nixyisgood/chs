@@ -26,14 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.getElementById('export-update-json').onclick = () => {
+        const urlValue = urlInput.value.trim();
+        if (!urlValue || urlValue.includes('tu-link-aqui')) {
+            alert('¡ERROR! Por favor, pon un link de descarga real de Dropbox o MediaFire antes de exportar.');
+            return;
+        }
+
         const updateData = {
             version: verInput.value,
-            url: urlInput.value,
+            url: urlValue,
             notes: notesInput.value
         };
         const jsonStr = JSON.stringify(updateData, null, 2);
         navigator.clipboard.writeText(jsonStr).then(() => {
-            alert('¡JSON de actualización copiado!\n\nPASOS IMPORTANTES:\n1. Crea un archivo llamado "update.json" en tu PC.\n2. Pega este código dentro.\n3. Sube ese archivo a tu Netlify/Hosting.\n\nEl launcher leerá ese archivo al abrirse para saber si hay una versión nueva.');
+            alert('¡JSON de actualización copiado!\n\nPASOS PARA SUBIRLO:\n1. Ve a tu carpeta "web" en el PC.\n2. Abre "update.json" y pega esto.\n3. Sube los cambios a tu GitHub (git push).\n\nEl launcher detectará el cambio al instante.');
         });
     };
 
