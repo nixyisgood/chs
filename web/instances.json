@@ -28,6 +28,14 @@
     "loader_version": null,
     "mods": null,
     "desc": ""
+  },
+  "PVP3": {
+    "name": "prueba6",
+    "version": "1.7.10",
+    "loader": "vanilla",
+    "loader_version": null,
+    "mods": null,
+    "desc": ""
   }
 }
 
