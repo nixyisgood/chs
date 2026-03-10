@@ -5,14 +5,6 @@
     "loader": "vanilla",
     "desc": "Servidor principal de supervivencia."
   },
-  "PERMA": {
-    "name": "preuba5",
-    "version": "1.21.11",
-    "loader": "fabric",
-    "loader_version": null,
-    "mods": "https://www.dropbox.com/scl/fo/ezngeddjb2t2hzj4xvudz/APgCx-ArL4HSQpXvEVUWwwg?rlkey=hjvc11x5avywuqy0qw5ypm9uw&dl=0",
-    "desc": "prueba5"
-  },
   "TEST": {
     "name": "prueba4",
     "version": "1.21.11",
