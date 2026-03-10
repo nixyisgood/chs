@@ -20,6 +20,14 @@
     "loader_version": null,
     "mods": "https://www.dropbox.com/scl/fo/ezngeddjb2t2hzj4xvudz/APgCx-ArL4HSQpXvEVUWwwg?rlkey=hjvc11x5avywuqy0qw5ypm9uw&dl=0",
     "desc": "prueba4"
+  },
+  "JG": {
+    "name": "JANEIRO GAMES",
+    "version": "1.20.1",
+    "loader": "forge",
+    "loader_version": null,
+    "mods": "https://www.dropbox.com/scl/fo/9my76bc5wf54q7k5y9m34/AGhOiRHCmPxDQbtAsZFcn5w?rlkey=zejfj7cel46bjrq97rff2ms8s&dl=0",
+    "desc": "prueba6"
   }
 }
 
