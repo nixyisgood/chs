@@ -13,61 +13,13 @@
     "mods": "https://www.dropbox.com/scl/fo/ezngeddjb2t2hzj4xvudz/APgCx-ArL4HSQpXvEVUWwwg?rlkey=hjvc11x5avywuqy0qw5ypm9uw&dl=0",
     "desc": "prueba5"
   },
-  "PVP": {
-    "name": "hola que hace",
-    "version": "1.8.9",
-    "loader": "vanilla",
+  "TEST": {
+    "name": "prueba4",
+    "version": "1.21.11",
+    "loader": "fabric",
     "loader_version": null,
-    "mods": null,
-    "desc": ""
-  },
-  "PVP2": {
-    "name": "probar2",
-    "version": "1.9",
-    "loader": "vanilla",
-    "loader_version": null,
-    "mods": null,
-    "desc": ""
-  },
-  "PVP3": {
-    "name": "prueba6",
-    "version": "1.7.10",
-    "loader": "vanilla",
-    "loader_version": null,
-    "mods": null,
-    "desc": ""
-  },
-  "PVP4": {
-    "name": "prueba7",
-    "version": "1.12.2",
-    "loader": "vanilla",
-    "loader_version": null,
-    "mods": null,
-    "desc": ""
-  },
-  "PVP5": {
-    "name": "prueba8",
-    "version": "1.16.5",
-    "loader": "vanilla",
-    "loader_version": null,
-    "mods": null,
-    "desc": ""
-  },
-  "LOL1": {
-    "name": "prueba9",
-    "version": "1.6.4",
-    "loader": "vanilla",
-    "loader_version": null,
-    "mods": null,
-    "desc": ""
-  },
-  "LOL2": {
-    "name": "prueba10",
-    "version": "1.5.2",
-    "loader": "vanilla",
-    "loader_version": null,
-    "mods": null,
-    "desc": ""
+    "mods": "https://www.dropbox.com/scl/fo/ezngeddjb2t2hzj4xvudz/APgCx-ArL4HSQpXvEVUWwwg?rlkey=hjvc11x5avywuqy0qw5ypm9uw&dl=0",
+    "desc": "prueba4"
   }
 }
 
