@@ -21,13 +21,13 @@
     "mods": "https://www.dropbox.com/scl/fo/ezngeddjb2t2hzj4xvudz/APgCx-ArL4HSQpXvEVUWwwg?rlkey=hjvc11x5avywuqy0qw5ypm9uw&dl=0",
     "desc": "prueba4"
   },
-  "TEST2": {
-    "name": "prueba6",
-    "version": "1.21.11",
-    "loader": "fabric",
+  "JG": {
+    "name": "JG",
+    "version": "1.20.1",
+    "loader": "forge",
     "loader_version": null,
-    "mods": "",
-    "desc": "prueba6"
+    "mods": "https://www.dropbox.com/scl/fo/9my76bc5wf54q7k5y9m34/AGhOiRHCmPxDQbtAsZFcn5w?rlkey=zejfj7cel46bjrq97rff2ms8s&dl=0",
+    "desc": "Servidor de JG"
   }
 }
 
