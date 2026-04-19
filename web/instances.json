@@ -1,9 +1,10 @@
 {
-  "SURVIVAL": {
-    "name": "Survival 1.20 [SURVIVAL]",
-    "version": "1.21.1",
-    "loader": "vanilla",
-    "desc": "Servidor principal de supervivencia."
+  "FORGE_116": {
+    "name": "Minecraft Forge 1.16.5",
+    "version": "1.16.5",
+    "loader": "forge",
+    "loader_version": "36.2.34",
+    "mods": "https://download853.mediafire.com/13tacvxucjygs73UHJ_QJrGYLkTSqAzsIm-ACMzIJMVjksiyfd4vYA7H1c5Ud2Sr-WWuH9OR4ELPSEQBp_JRO4T9ETb94IdJVgRN1WGzfyZBXJPTnlnHfNjq7LwyTMDjtVBkp6LWYrYOtAo1IXnQZzswGCqcvqtyXqN9t6rIN9ojmlQ/vlyr307xnofp79i/mods.rar",
+    "desc": "Instancia de Forge 1.16.5 lista para mods."
   }
 }
-
